@@ -8,8 +8,6 @@ body {
 }
 
 input {
-  height: 35px;
-  width: 450px;
   border-radius: 7.5px;
   border-style: solid;
   border-color: lightgrey;
@@ -19,10 +17,6 @@ img {
   margin: 25px 25px;
 }
 
-p {
-  display: none;
-}
-
 @media (min-width: 430px) {
   .container {
     margin-top: 10px;
@@ -30,6 +24,11 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     width: 430px;
+  }
+
+  input {
+    height: 35px;
+    width: 200px;
   }
 }
 
@@ -41,6 +40,11 @@ p {
     flex-wrap: wrap;
     width: 500px;
   }
+
+  input {
+    height: 35px;
+    width: 225px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -51,6 +55,11 @@ p {
     flex-wrap: wrap;
     width: 700px;
   }
+
+  input {
+    height: 35px;
+    width: 250px;
+  }
 }
 
 @media (min-width: 950px) {
@@ -60,14 +69,39 @@ p {
     text-align: center;
     width: 950px;
   }
+
+  input {
+    height: 35px;
+    width: 300px;
+  }
 }
 
 @media (min-width: 1100px) {
-
   .container {
     margin-top: 10px;
     display: inline-block;
     text-align: center;
     width: 1100px;
+  }
+
+  input {
+    height: 35px;
+    width: 470px;
+  }
+}
+
+/*Responsive design for the lightbox captions*/
+
+@media (min-width: 430px) {
+  .mfp-title {
+    text-align: center;
+    color: lightblue;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 950px) {
+  .mfp-title {
+    font-size: 1.25em;
   }
 }

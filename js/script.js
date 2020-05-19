@@ -1,13 +1,13 @@
 const input = document.getElementById('input');
-const paragraphs = document.getElementsByTagName('p');
+const anchors = document.getElementsByTagName('a');
 const images = document.getElementsByTagName('img');
 
 function filter(caption) {
   for (let i = 0; i < images.length; i++) {
-    if (paragraphs[i].textContent.toLowerCase().indexOf(caption) < 0) {
+    if (anchors[i].title.toLowerCase().indexOf(caption) < 0) {
         images[i].style.display = 'none';
     }
-    if (paragraphs[i].textContent.toLowerCase().indexOf(caption) >= 0) {
+    if (anchors[i].title.toLowerCase().indexOf(caption) >= 0) {
         images[i].style.display = '';
     }
   }
